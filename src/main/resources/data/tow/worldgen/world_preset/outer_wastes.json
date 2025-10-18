@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "tow:overworld",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "biomes": [
+            {
+              "biome": "tow:desolation",
+              "parameters": {
+                "temperature": 0.8,
+                "humidity": 0.4,
+                "continentalness": 0.0,
+                "erosion": 0.0,
+                "weirdness": 0.0,
+                "depth": 0.0,
+                "offset": 0.0
+              }
+            }
+          ]
+        },
+        "settings": "tow:wilds"
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        },
+        "settings": "minecraft:nether"
+      }
+    }
+  }
+}
